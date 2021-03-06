@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "deploy2-sam"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-ce4rkvita557"
+s3_prefix = "deploy2-sam"
+region = "eu-west-1"
+profile = "traian"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
