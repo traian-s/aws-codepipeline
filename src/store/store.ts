@@ -1,10 +1,10 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import quizzReducer from "./quizzSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
-  },
+    quizz: quizzReducer
+  }
 });
 
 export type RootState = ReturnType<typeof store.getState>;
