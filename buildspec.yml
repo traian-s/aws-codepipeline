@@ -7,6 +7,7 @@ phases:
   build:
     commands:
       - npm run-script build
+      - cd build && zip -q -r ../frontend-distribution . *
 artifacts:
   files:
-    - "build/**/*"
+    - "frontend-distribution.zip"
